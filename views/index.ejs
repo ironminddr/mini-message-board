@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+  <% messages.forEach( function(message) { %>
+    <p><%= message.user %>:<%= message.text %>,<%= message.added %></p>
+  <% }); %>
+  <form method="POST" action="/new">
+    <input name="messageText"> </input>
+    <input name="messageUser"> </input>
+    <button onclick="submit">write</button>
+ </form>
+</body>
