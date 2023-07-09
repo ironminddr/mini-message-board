@@ -15,7 +15,7 @@ const messages = [
 ];
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('../views/index.ejs', { title: 'Express', messages: messages });
+  res.render('../views/index', { title: 'Express', messages: messages });
 });
 
 router.post('/new', function (req, res, next) {
