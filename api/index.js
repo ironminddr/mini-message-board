@@ -8,7 +8,7 @@ var indexRouter = require('../routes/home');
 var usersRouter = require('../routes/users');
 
 var app = express();
-
+app.listen(process.env.PORT || 3000); 
 const viewsPath = path.join(__dirname, '/views') 
 app.use((req, res, next) => {
   const origin = req.get('referer');
